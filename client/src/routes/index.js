@@ -1,18 +1,7 @@
-import { createBrowserRouter } from 'react-router-dom';
-import App from '../App';
-import RegisterPage from '../pages/RegisterPage';
+import { createBrowserROuter } from 'react-router-dom';
+import App from 
+    import { router } from '../../../server/router';
 
-const router = createBrowserRouter([
- {
-    path: "/",
-    element: <App/>,
-    children: [
-        {
-            path: "register",
-            element: <RegisterPage/>
-        }
-    ]
- }
-])
+
 
 export default router
